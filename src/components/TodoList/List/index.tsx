@@ -17,13 +17,16 @@ const TdList: FC<IProps> = ({
     return (
         <div className="todo-list">
             {
-            todoList && todoList.map((todo: ITodo)=>{
-                return(
-                    <TdItem
-                        key={ todo }
-                    />
-                );
-            })
+                todoList && todoList.map((todo: ITodo) => {
+                    return (
+                        <TdItem
+                            key={todo.id}
+                            todo={todo}
+                            removeTodo={removeTodo}
+                            toggleTodo={toggleTodo}
+                        />
+                    );
+                })
             }
         </div>
     )

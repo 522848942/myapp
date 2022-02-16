@@ -26,6 +26,11 @@ function todoreducer(state:IState, action: IAction):IState{
                     }
                 })
             }
+        case ACTION_TYPE.INIT_TODOLIST:
+            return{
+                ...state,
+                todoList: payload as ITodo[]
+            }
         default:
             return state;
     }

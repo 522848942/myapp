@@ -30,6 +30,7 @@ const TdInput: FC<IProps> = ({
                     completed: false
                 }
             )
+            inputRef.current!.value = ''
         }
     }
 
