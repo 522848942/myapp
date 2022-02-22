@@ -37,7 +37,7 @@ const TdInput: FC<IProps> = ({
     return (
         <div className='todo-input'>
             <input type="text" placeholder='请输入代办项' ref={inputRef} />
-            <button onClick={addItem}>增加</button>
+            <button onClick={addItem}>添加</button>
         </div>
     )
 }
